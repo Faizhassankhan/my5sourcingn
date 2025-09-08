@@ -1,0 +1,61 @@
+
+import React, { useState } from 'react';
+import { GALLERY_IMAGES } from '../constants';
+import type { GalleryImage } from '../types';
+
+const GalleryPage: React.FC = () => {
+  const [filter, setFilter] = useState('All');
+  const categories = ['All', ...Array.from(new Set(GALLERY_IMAGES.map(img => img.category)))];
+
+  const filteredImages = filter === 'All' 
+    ? GALLERY_IMAGES 
+    : GALLERY_IMAGES.filter(image => image.category === filter);
+
+  return (
+    <section id="gallery-page" className="py-20 bg-gray-900 pt-32">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-white">Product Gallery</h1>
+          <p className="text-gray-400 mt-2">Explore the range of high-quality garments we source.</p>
+          <div className="mt-4 w-24 h-1 bg-amber-400 mx-auto"></div>
+        </div>
+        
+        <div className="flex justify-center flex-wrap gap-4 mb-12">
+          {categories.map(category => (
+            <button
+              key={category}
+              onClick={() => setFilter(category)}
+              className={`px-6 py-2 text-sm font-semibold rounded-full transition-colors duration-300 ${
+                filter === category
+                  ? 'bg-amber-400 text-gray-900'
+                  : 'bg-gray-800 text-gray-300 hover:bg-amber-400 hover:text-gray-900'
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {filteredImages.map((image: GalleryImage) => (
+            <div key={image.id} className="group relative overflow-hidden rounded-lg shadow-lg aspect-w-1 aspect-h-1">
+              <img 
+                src={image.src} 
+                alt={image.alt} 
+                className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-500 flex items-end p-4">
+                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">
+                  <h3 className="text-lg font-bold">{image.alt}</h3>
+                  <p className="text-sm font-bold text-amber-400">{image.category}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default GalleryPage;
