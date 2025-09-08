@@ -67,16 +67,16 @@ export const OFFICE_GALLERY_IMAGES: GalleryImage[] = [
     { id: 4, src: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800&h=600&fit=crop', alt: 'Team discussing project details', category: 'Office' },
     { id: 5, src: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&h=600&fit=crop', alt: 'Bright and open workspace', category: 'Office' },
     { id: 6, src: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=800&h=600&fit=crop', alt: 'Unity and teamwork', category: 'Office' },
-    { id: 7, src: '/public/images/Q 1.jpg', alt: 'Creative brainstorming session', category: 'Office' },
-    { id: 8, src: '/public/images/q2.jpg', alt: 'Focused work environment', category: 'Office' },
-    { id: 9, src: '/public/images/q3.jpg', alt: 'Team collaboration', category: 'Office' },
-    { id: 10, src: '/public/images/q4.jpg', alt: 'Office workspace with laptop', category: 'Office' },
-    { id: 11, src: '/public/images/q5.jpg', alt: 'Team meeting in progress', category: 'Office' },
+    { id: 7, src: '/images/Q 1.jpg', alt: 'Creative brainstorming session', category: 'Office' },
+    { id: 8, src: '/images/q2.jpg', alt: 'Focused work environment', category: 'Office' },
+    { id: 9, src: '/images/q3.jpg', alt: 'Team collaboration', category: 'Office' },
+    { id: 10, src: '/images/q4.jpg', alt: 'Office workspace with laptop', category: 'Office' },
+    { id: 11, src: '/images/q5.jpg', alt: 'Team meeting in progress', category: 'Office' },
 ];
 
 export const QUALITY_INSPECTION_CONTENT: QualityStep[] = [
     { 
-        image: '/public/images/o1.jpeg',
+        image: '/images/o1.jpeg',
         title: "Raw Material Inspection",
         description: "Before production begins, we rigorously inspect all raw materials, including fabrics, threads, and accessories, to ensure they meet our stringent quality and durability standards."
     },
