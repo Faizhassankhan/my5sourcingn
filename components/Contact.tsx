@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact: React.FC = () => {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -9,10 +10,23 @@ const Contact: React.FC = () => {
     setFormState({ ...formState, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formState);
-    setSubmitted(true);
+    try {
+      await emailjs.send(
+        'service_cps5use',
+        'template_z9kc3lr',
+        {
+          from_name: formState.name,
+          from_email: formState.email,
+          message: formState.message,
+        },
+        'B3R3Oc9VfQ1ZDljTd'
+      );
+      setSubmitted(true);
+    } catch (error) {
+      alert('Failed to send message. Please try again later.');
+    }
   };
 
   return (
