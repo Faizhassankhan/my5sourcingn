@@ -79,7 +79,7 @@ export const OFFICE_GALLERY_IMAGES: GalleryImage[] = [
 
 export const QUALITY_INSPECTION_CONTENT: QualityStep[] = [
     { 
-        image: '/images/o1.jpeg',
+        image: 'https://www.etextilemagazine.com/wp-content/uploads/2023/09/tekstil-sektoru.jpg',
         title: "Raw Material Inspection",
         description: "Before production begins, we rigorously inspect all raw materials, including fabrics, threads, and accessories, to ensure they meet our stringent quality and durability standards."
     },
