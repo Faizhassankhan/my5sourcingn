@@ -14,14 +14,14 @@ const Contact: React.FC = () => {
     e.preventDefault();
     try {
       await emailjs.send(
-        'service_cps5use',
-        'template_z9kc3lr',
+        'service_ia3hkis',
+        'template_7mzqxbc',
         {
           from_name: formState.name,
           from_email: formState.email,
           message: formState.message,
         },
-        'B3R3Oc9VfQ1ZDljTd'
+        'BmDO6rVPl-Bl5Do4n'
       );
       setSubmitted(true);
     } catch (error) {

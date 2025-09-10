@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import emailjs from 'emailjs-com';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -12,11 +13,23 @@ const ContactPage: React.FC = () => {
         setFormState({ ...formState, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log('Form submitted:', formState);
-        setSubmitted(true);
-        // Here you would typically integrate with an email service like EmailJS
+        try {
+            await emailjs.send(
+                'service_ia3hkis',
+                'template_7mzqxbc',
+                {
+                    from_name: formState.name,
+                    from_email: formState.email,
+                    message: formState.message,
+                },
+                'BmDO6rVPl-Bl5Do4n'
+            );
+            setSubmitted(true);
+        } catch (error) {
+            alert('Failed to send message. Please try again later.');
+        }
     };
 
     return (
