@@ -1,10 +1,13 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { GALLERY_IMAGES } from '../constants';
 import type { GalleryImage } from '../types';
 
 const GalleryPage: React.FC = () => {
   const [filter, setFilter] = useState('All');
+  useEffect(() => { AOS.init({ duration: 1000, once: true }); }, []);
   const categories = ['All', ...Array.from(new Set(GALLERY_IMAGES.map(img => img.category)))];
 
   const filteredImages = filter === 'All' 
@@ -12,12 +15,12 @@ const GalleryPage: React.FC = () => {
     : GALLERY_IMAGES.filter(image => image.category === filter);
 
   return (
-    <section id="gallery-page" className="py-20 bg-gray-900 pt-32">
+    <section id="gallery-page" className="py-20 bg-gray-900 pt-32" data-aos="fade-up">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">Product Gallery</h1>
-          <p className="text-gray-400 mt-2">Explore the range of high-quality garments we source.</p>
-          <div className="mt-4 w-24 h-1 bg-amber-400 mx-auto"></div>
+          <h1 className="text-4xl md:text-5xl font-bold text-white" data-aos="fade-down">Product Gallery</h1>
+          <p className="text-gray-400 mt-2" data-aos="fade-up" data-aos-delay="200">Explore the range of high-quality garments we source.</p>
+          <div className="mt-4 w-24 h-1 bg-amber-400 mx-auto" data-aos="zoom-in" data-aos-delay="400"></div>
         </div>
         
         <div className="flex justify-center flex-wrap gap-4 mb-12">

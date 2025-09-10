@@ -1,5 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { OFFICE_GALLERY_IMAGES } from '../constants';
 import type { GalleryImage } from '../types';
 
@@ -7,6 +9,7 @@ const OfficeGalleryPage: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
 
   useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
     const handleEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         setSelectedImage(null);
@@ -33,12 +36,12 @@ const OfficeGalleryPage: React.FC = () => {
 
   return (
     <>
-      <section id="office-gallery-page" className="py-20 bg-gray-900 pt-32 min-h-screen">
+      <section id="office-gallery-page" className="py-20 bg-gray-900 pt-32 min-h-screen" data-aos="fade-up">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Our Workspace</h1>
-            <p className="text-gray-400 mt-4 max-w-2xl mx-auto">A look inside our collaborative and modern office environment where ideas come to life.</p>
-            <div className="mt-6 w-24 h-1 bg-amber-400 mx-auto"></div>
+            <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight" data-aos="fade-down">Our Workspace</h1>
+            <p className="text-gray-400 mt-4 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">A look inside our collaborative and modern office environment where ideas come to life.</p>
+            <div className="mt-6 w-24 h-1 bg-amber-400 mx-auto" data-aos="zoom-in" data-aos-delay="400"></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">

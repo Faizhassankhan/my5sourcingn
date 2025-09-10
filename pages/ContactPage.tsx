@@ -1,9 +1,12 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ContactPage: React.FC = () => {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const [submitted, setSubmitted] = useState(false);
+    useEffect(() => { AOS.init({ duration: 1000, once: true }); }, []);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormState({ ...formState, [e.target.name]: e.target.value });
@@ -17,15 +20,15 @@ const ContactPage: React.FC = () => {
     };
 
     return (
-        <section id="contact-page" className="bg-gray-900 text-white min-h-screen flex items-center justify-center pt-32 pb-12">
+        <section id="contact-page" className="bg-gray-900 text-white min-h-screen flex items-center justify-center pt-32 pb-12" data-aos="fade-up">
             <div className="container mx-auto px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="text-left">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
-                        <p className="text-gray-400 mb-8 max-w-md">
+                        <h1 className="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-down">Get in Touch</h1>
+                        <p className="text-gray-400 mb-8 max-w-md" data-aos="fade-up" data-aos-delay="200">
                             Have a question or a project in mind? We'd love to hear from you. Fill out the form, and we'll get back to you as soon as possible.
                         </p>
-                        <div className="space-y-4">
+                        <div className="space-y-4" data-aos="zoom-in" data-aos-delay="400">
                             <div className="flex items-center gap-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

@@ -50,16 +50,17 @@ export const SERVICES: Service[] = [
 
 export const GALLERY_IMAGES: GalleryImage[] = [
     { id: 1, src: 'https://plus.unsplash.com/premium_photo-1698260795268-cc7e0d5c3174?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Denim Jacket', category: 'Jackets' },
-    { id: 2, src: 'https://nittrichy.campusmall.in/media/catalog/product/cache/51b20d92db92cfa79e65bf00656c43a8/n/i/nit_trichy_varsity_jacket_1_1.jpg', alt: 'Denim jeans showcase', category: 'Denim' },
-    { id: 2, src: 'https://i.postimg.cc/NMZ63Yxd/29eecb56b3ba1dc-file-00000000341c61f5b2105d33a6cf8e9d-wm.jpg', alt: 'Denim jeans showcase', category: 'Denim' },
-    { id: 3, src: '/images/3.png', alt: 'Rugged denim hoodie', category: 'Hoodies' },
-    { id: 4, src: '/images/4.png', alt: 'Stylish denim jackets', category: 'Jackets' },
-    { id: 5, src: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&h=600&fit=crop', alt: 'Jeans Pant', category: 'Denim' },
-    { id: 6, src: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Stylish hoodie', category: 'Hoodies' },
-    { id: 7, src: 'https://plus.unsplash.com/premium_photo-1707816508645-d229ddd3aa65?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Fashionable modern style', category: 'Jackets' },
-    { id: 8, src: 'https://images.unsplash.com/photo-1715758890151-2c15d5d482aa?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Close up of Jeans', category: 'Denim' },
-    { id: 9, src: '/images/9.png', alt: 'Premium denim hoodie', category: 'Hoodies' },
-    { id: 10, src: 'https://www.teez.in/cdn/shop/products/NITWARANGALTshirt_19_6ddbe1fd-0e3f-4c59-83a7-cd3d929e0bbd_large.jpg', alt: 'Denim Jacket on model', category: 'Jackets' },
+    { id: 2, src: 'https://nittrichy.campusmall.in/media/catalog/product/cache/51b20d92db92cfa79e65bf00656c43a8/n/i/nit_trichy_varsity_jacket_1_1.jpg', alt: 'Nits Jacket', category: 'Nits' },
+    { id: 3, src: 'https://i.postimg.cc/NMZ63Yxd/29eecb56b3ba1dc-file-00000000341c61f5b2105d33a6cf8e9d-wm.jpg', alt: 'Denim jeans showcase', category: 'Denim' },
+    { id: 4, src: '/images/3.png', alt: 'Rugged denim hoodie', category: 'Hoodies' },
+    { id: 5, src: '/images/4.png', alt: 'Stylish denim jackets', category: 'Jackets' },
+    { id: 6, src: 'https://nittrichy.campusmall.in/media/catalog/product/cache/51b20d92db92cfa79e65bf00656c43a8/n/i/nit_trichy_classic_hoodie_grey_melange.jpg', alt: 'Casual Nits Hoodie', category: 'Nits' },
+    { id: 7, src: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&h=600&fit=crop', alt: 'Jeans Pant', category: 'Denim' },
+    { id: 8, src: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Stylish hoodie', category: 'Hoodies' },
+    { id: 9, src: 'https://plus.unsplash.com/premium_photo-1707816508645-d229ddd3aa65?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Fashionable modern style', category: 'Jackets' },
+    { id: 10, src: 'https://images.unsplash.com/photo-1715758890151-2c15d5d482aa?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Close up of Jeans', category: 'Denim' },
+    { id: 11, src: '/images/9.png', alt: 'Premium denim hoodie', category: 'Hoodies' },
+    { id: 12, src: 'https://www.teez.in/cdn/shop/products/NITWARANGALTshirt_19_6ddbe1fd-0e3f-4c59-83a7-cd3d929e0bbd_large.jpg', alt: 'Nits Jacket', category: 'Nits' },
 ];
 
 export const OFFICE_GALLERY_IMAGES: GalleryImage[] = [
@@ -69,11 +70,11 @@ export const OFFICE_GALLERY_IMAGES: GalleryImage[] = [
     { id: 4, src: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800&h=600&fit=crop', alt: 'Team discussing project details', category: 'Office' },
     { id: 5, src: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&h=600&fit=crop', alt: 'Bright and open workspace', category: 'Office' },
     { id: 6, src: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=800&h=600&fit=crop', alt: 'Unity and teamwork', category: 'Office' },
-    { id: 7, src: '/images/Q 1.jpg', alt: 'Creative brainstorming session', category: 'Office' },
-    { id: 8, src: '/images/q2.jpg', alt: 'Focused work environment', category: 'Office' },
-    { id: 9, src: '/images/q3.jpg', alt: 'Team collaboration', category: 'Office' },
-    { id: 10, src: '/images/q4.jpg', alt: 'Office workspace with laptop', category: 'Office' },
-    { id: 11, src: '/images/q5.jpg', alt: 'Team meeting in progress', category: 'Office' },
+    { id: 7, src: '/images/Q 1.jpg', alt: 'Caps & Jeans', category: 'Office' },
+    { id: 8, src: '/images/q2.jpg', alt: 'Meeting display room', category: 'Office' },
+    { id: 9, src: '/images/q3.jpg', alt: 'Denim jackets showcase', category: 'Office' },
+    { id: 10, src: '/images/q4.jpg', alt: 'Winter jacket display', category: 'Office' },
+    { id: 11, src: '/images/q5.jpg', alt: 'Apparel meeting area', category: 'Office' },
 ];
 
 export const QUALITY_INSPECTION_CONTENT: QualityStep[] = [

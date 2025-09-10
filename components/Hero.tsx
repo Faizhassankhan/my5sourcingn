@@ -10,7 +10,11 @@ const Hero: React.FC = () => {
       ></div>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
       <div className="relative z-10 p-6 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-tight">
+        <h1 
+          className="text-4xl md:text-6xl font-bold mb-4 tracking-tight"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
           Your Vision, Sourced With Excellence
         </h1>
         <p className="text-lg md:text-xl mb-8 text-gray-300">
