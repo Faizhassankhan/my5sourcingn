@@ -51,7 +51,7 @@ const Header: React.FC<HeaderProps> = ({ currentRoute }) => {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isMenuOpen ? 'bg-gray-900 shadow-lg' : 'bg-transparent'}`}>
+  <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isMenuOpen ? 'bg-black shadow-lg' : 'bg-transparent'}`}>
         <div className="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
           <a href="#/home" className="text-2xl font-bold text-white tracking-wider" aria-label="Go to Home">
             My<span className="text-amber-400">5</span>sourcing
@@ -76,7 +76,7 @@ const Header: React.FC<HeaderProps> = ({ currentRoute }) => {
                 </a>
 
                 {link.children && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-56 bg-gray-800 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 invisible group-hover:visible z-10 transform translate-y-2 group-hover:translate-y-0">
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-56 bg-black rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 invisible group-hover:visible z-10 transform translate-y-2 group-hover:translate-y-0">
                     <div className="py-2">
                       {link.children.map(childLink => (
                         <a
@@ -109,7 +109,7 @@ const Header: React.FC<HeaderProps> = ({ currentRoute }) => {
       
       {/* Mobile Menu Overlay */}
       <div 
-        className={`fixed inset-0 z-40 bg-gray-900 bg-opacity-95 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}
+        className={`fixed inset-0 z-40 bg-black bg-opacity-95 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}
         aria-modal="true"
         role="dialog"
       >
