@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
           </p>
           <div className="mt-4 w-24 h-1 bg-amber-400 mx-auto"></div>
         </div>
-  <div className="max-w-3xl mx-auto bg-black p-8 rounded-lg shadow-lg">
+  <div className="max-w-3xl mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
           {submitted ? (
             <div className="text-center py-10">
               <h3 className="text-2xl font-bold text-white mb-2">Thank you!</h3>

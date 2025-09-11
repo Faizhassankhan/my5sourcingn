@@ -63,7 +63,7 @@ const ContactPage: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-black p-8 rounded-lg shadow-lg">
+                    <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
                         {submitted ? (
                             <div className="text-center py-10 h-full flex flex-col justify-center">
                                 <h3 className="text-2xl font-bold text-white mb-2">Thank you!</h3>
