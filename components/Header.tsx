@@ -52,17 +52,19 @@ const Header: React.FC<HeaderProps> = ({ currentRoute }) => {
   return (
     <>
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isMenuOpen ? 'bg-gray-900 shadow-lg' : 'bg-transparent'}`}>
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="#/home" className="text-2xl font-bold text-white tracking-wider">
+        <div className="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+          <a href="#/home" className="text-2xl font-bold text-white tracking-wider" aria-label="Go to Home">
             My<span className="text-amber-400">5</span>sourcing
           </a>
-          <nav className="hidden md:flex space-x-6">
+          <nav className="hidden md:flex space-x-4 lg:space-x-6" aria-label="Main Navigation">
             {NAV_LINKS.map((link: NavLink) => (
               <div key={link.label} className="relative group">
                 <a 
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className={`text-gray-300 font-bold transition-colors duration-300 relative flex items-center gap-1.5 py-2 cursor-pointer ${isParentActive(link) ? 'text-amber-400' : 'hover:text-amber-400'}`}
+                  className={`text-gray-300 font-bold transition-colors duration-300 relative flex items-center gap-1.5 py-2 cursor-pointer text-base md:text-lg ${isParentActive(link) ? 'text-amber-400' : 'hover:text-amber-400'}`}
+                  aria-label={link.label}
+                  tabIndex={0}
                 >
                   {link.label}
                   {link.children && (
@@ -81,7 +83,9 @@ const Header: React.FC<HeaderProps> = ({ currentRoute }) => {
                           key={childLink.label}
                           href={childLink.href}
                           onClick={(e) => handleNavClick(e, childLink.href)}
-                          className={`block w-full text-left px-4 py-2 text-sm font-bold transition-colors duration-200 cursor-pointer ${currentRoute === childLink.href ? 'text-amber-400 bg-gray-700' : 'text-gray-300 hover:text-amber-400 hover:bg-gray-700'}`}
+                          className={`block w-full text-left px-4 py-2 text-sm md:text-base font-bold transition-colors duration-200 cursor-pointer ${currentRoute === childLink.href ? 'text-amber-400 bg-gray-700' : 'text-gray-300 hover:text-amber-400 hover:bg-gray-700'}`}
+                          aria-label={childLink.label}
+                          tabIndex={0}
                         >
                           {childLink.label}
                         </a>
@@ -116,13 +120,15 @@ const Header: React.FC<HeaderProps> = ({ currentRoute }) => {
              </svg>
            </button>
         </div>
-        <nav className="flex flex-col items-center justify-center h-full -mt-16 space-y-8">
+  <nav className="flex flex-col items-center justify-center h-full -mt-16 space-y-6" aria-label="Mobile Navigation">
           {mobileNavLinks.map((link: NavLink) => (
             <a 
               key={link.label} 
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className={`text-3xl font-medium transition-colors duration-300 ${currentRoute === link.href ? 'text-amber-400' : 'text-gray-300 hover:text-amber-400'}`}
+              className={`text-2xl sm:text-3xl font-medium transition-colors duration-300 py-2 px-4 rounded ${currentRoute === link.href ? 'text-amber-400' : 'text-gray-300 hover:text-amber-400'}`}
+              aria-label={link.label}
+              tabIndex={0}
             >
               {link.label}
             </a>

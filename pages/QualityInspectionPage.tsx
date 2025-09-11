@@ -8,11 +8,11 @@ import type { QualityStep } from '../types';
 const QualityInspectionPage: React.FC = () => {
   useEffect(() => { AOS.init({ duration: 1000, once: true }); }, []);
   return (
-    <section id="quality-inspection-page" className="py-20 bg-gray-900 pt-32" data-aos="fade-up">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+  <section id="quality-inspection-page" className="py-28 bg-gray-900 pt-40 font-sans" data-aos="fade-up">
+  <div className="container mx-auto px-8">
+  <div className="text-center mb-20">
           <h1 className="text-4xl md:text-5xl font-bold text-white" data-aos="fade-down">Commitment to Quality</h1>
-          <p className="text-gray-400 mt-4 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+          <p className="text-gray-300 mt-4 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
             Our multi-stage quality inspection process ensures that every garment we source meets the highest standards of excellence and your exact specifications.
           </p>
           <div className="mt-6 w-32 h-1 bg-amber-400 mx-auto" data-aos="zoom-in" data-aos-delay="400"></div>
@@ -34,7 +34,7 @@ const QualityInspectionPage: React.FC = () => {
               <div className="md:w-1/2">
                 <span className="text-amber-400 font-bold text-sm tracking-widest">STEP {index + 1}</span>
                 <h2 className="text-3xl font-bold text-white mt-2 mb-4">{step.title}</h2>
-                <p className="text-gray-400 leading-relaxed">{step.description}</p>
+                <p className="text-gray-300 leading-relaxed">{step.description}</p>
               </div>
             </div>
           ))}

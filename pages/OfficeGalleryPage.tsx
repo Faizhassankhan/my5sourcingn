@@ -36,11 +36,11 @@ const OfficeGalleryPage: React.FC = () => {
 
   return (
     <>
-      <section id="office-gallery-page" className="py-20 bg-gray-900 pt-32 min-h-screen" data-aos="fade-up">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
+  <section id="office-gallery-page" className="py-28 bg-gray-900 pt-40 min-h-screen font-sans" data-aos="fade-up">
+  <div className="container mx-auto px-8">
+          <div className="text-center mb-20">
             <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight" data-aos="fade-down">Our Workspace</h1>
-            <p className="text-gray-400 mt-4 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">A look inside our collaborative and modern office environment where ideas come to life.</p>
+            <p className="text-gray-300 mt-4 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">A look inside our collaborative and modern office environment where ideas come to life.</p>
             <div className="mt-6 w-24 h-1 bg-amber-400 mx-auto" data-aos="zoom-in" data-aos-delay="400"></div>
           </div>
           
@@ -48,7 +48,7 @@ const OfficeGalleryPage: React.FC = () => {
             {OFFICE_GALLERY_IMAGES.map((image: GalleryImage, index: number) => (
               <div 
                 key={image.id} 
-                className="group relative overflow-hidden rounded-xl cursor-pointer shadow-lg"
+                className="group relative overflow-hidden rounded-xl cursor-pointer shadow-lg bg-gray-800"
                 onClick={() => setSelectedImage(image)}
                 role="button"
                 aria-label={`View image: ${image.alt}`}
@@ -58,7 +58,8 @@ const OfficeGalleryPage: React.FC = () => {
                 <img 
                   src={image.src} 
                   alt={image.alt} 
-                  className="w-full h-full object-cover transition-all duration-500 ease-in-out group-hover:scale-105"
+                  className="w-full h-full object-cover rounded-xl transition-all duration-500 ease-in-out group-hover:scale-105"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out"></div>
                 <div className="absolute inset-0 flex flex-col items-start justify-end p-6 text-white text-left opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out transform translate-y-4 group-hover:translate-y-0">

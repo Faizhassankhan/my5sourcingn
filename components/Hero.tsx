@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center text-center text-white">
+  <section id="home" className="relative h-screen flex items-center justify-center text-center text-white font-sans">
       <div 
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center" 
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=1920&h=1080&fit=crop')" }}
@@ -11,20 +11,29 @@ const Hero: React.FC = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
       <div className="relative z-10 p-6 max-w-4xl mx-auto">
         <h1 
-          className="text-4xl md:text-6xl font-bold mb-4 tracking-tight"
+          className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight"
           data-aos="fade-down"
           data-aos-delay="100"
         >
-          Your Vision, Sourced With Excellence
+          Fashion Sourcing Made Simple
         </h1>
-        <p className="text-lg md:text-xl mb-8 text-gray-300">
-          We are your trusted partner in fashion sourcing, connecting your brand with the world's finest manufacturers.
+        <h2 
+          className="text-2xl md:text-3xl font-bold mb-6 text-amber-400"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          Your Vision, Delivered With Excellence
+        </h2>
+        <p className="text-lg md:text-xl mb-8 text-gray-300" data-aos="fade-up" data-aos-delay="500">
+          We connect your brand with the world’s finest manufacturers—quality, speed, and reliability from concept to delivery.
         </p>
         <a 
           href="#/contact" 
-          className="bg-amber-400 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-amber-500 transition-all duration-300 transform hover:scale-105"
+          className="bg-amber-400 text-gray-900 font-bold py-4 px-10 rounded-full shadow-lg hover:bg-amber-500 transition-all duration-300 transform hover:scale-105 text-xl tracking-wide"
+          data-aos="zoom-in"
+          data-aos-delay="700"
         >
-          Get a Quote
+          Request a Free Quote
         </a>
       </div>
     </section>
