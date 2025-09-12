@@ -15,7 +15,7 @@ export const NAV_LINKS: NavLink[] = [
     href: '#/gallery', 
     label: 'Gallery',
     children: [
-      { href: '#/gallery', label: 'Product Gallery' },
+      { href: '#/gallery', label: 'Gallery' },
       { href: '#/office-gallery', label: 'Office Gallery' },
     ]
   },
