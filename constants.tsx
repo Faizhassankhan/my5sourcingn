@@ -20,6 +20,7 @@ export const NAV_LINKS: NavLink[] = [
     ]
   },
   { href: '#/contact', label: 'Contact' },
+  { href: '#/our-products', label: 'Our Products' },
 ];
 
 const iconClass = "h-12 w-12 text-amber-400";
@@ -98,4 +99,14 @@ export const QUALITY_INSPECTION_CONTENT: QualityStep[] = [
         title: "Packaging & Logistics Check",
         description: "We ensure that garments are properly folded, tagged, and packed according to your requirements, safeguarding the product's integrity during transit."
     }
+];
+
+export const OUR_PRODUCT_IMAGES: GalleryImage[] = [
+  { id: 1, src: '/images/CH PG 1.jpg', alt: 'Premium T-Shirt', category: 'T-Shirts' },
+  { id: 2, src: '/images/CH PG  (1).jpg', alt: 'Classic Jeans', category: 'Jeans' },
+  { id: 3, src: '/images/CH PG  (2).jpg', alt: 'Printed Jeans', category: 'Jeans' },
+  { id: 4, src: '/images/CH PG  (3).jpg', alt: 'Casual Jacket', category: 'Jackets' },
+  { id: 5, src: '/images/CH PG  (4).jpg', alt: 'Embroidery Jeans', category: 'Jeans' },
+  { id: 6, src: 'https://images.unsplash.com/photo-1708523842501-1619478cea1f?q=80&w=1171&auto=format&fit=crop', alt: 'Jeans Set', category: 'Sets' },
+  // Add more product images as needed
 ];

@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -11,7 +10,7 @@ const ServicesPage: React.FC = () => {
   <div className="pt-40 pb-28 bg-gray-900 font-sans" data-aos="fade-up">
   <div className="container mx-auto px-8">
   <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight" data-aos="fade-down">Our Services</h1>
+          <h1 className="text-6xl font-extrabold text-white mb-2 tracking-tight font-sans" style={{letterSpacing: '-2px'}}>Our Services</h1>
           <p className="text-gray-300 mt-4 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
             We provide comprehensive, end-to-end solutions for fashion brands, from initial concept to final delivery. Our expertise ensures quality, efficiency, and reliability at every step of the supply chain.
           </p>

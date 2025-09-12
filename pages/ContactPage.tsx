@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import AOS from 'aos';
@@ -37,7 +36,7 @@ const ContactPage: React.FC = () => {
             <div className="container mx-auto px-8">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
                     <div className="text-left">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-down">Get in Touch</h1>
+                        <h1 className="text-6xl font-extrabold text-white mb-2 tracking-tight font-sans" style={{letterSpacing: '-2px'}}>Get in Touch</h1>
                         <p className="text-gray-300 mb-8 max-w-md" data-aos="fade-up" data-aos-delay="200">
                             Have a question or a project in mind? We'd love to hear from you. Fill out the form, and we'll get back to you as soon as possible.
                         </p>

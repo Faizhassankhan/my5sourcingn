@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -18,7 +17,7 @@ const GalleryPage: React.FC = () => {
   <section id="gallery-page" className="py-28 bg-gray-900 pt-40 font-sans" data-aos="fade-up">
   <div className="container mx-auto px-8">
   <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-5xl font-bold text-white" data-aos="fade-down">Product Gallery</h1>
+          <h1 className="text-6xl font-extrabold text-white mb-2 tracking-tight font-sans" style={{letterSpacing: '-2px'}}>Product Gallery</h1>
           <p className="text-gray-300 mt-2" data-aos="fade-up" data-aos-delay="200">Explore the range of high-quality garments we source.</p>
           <div className="mt-4 w-24 h-1 bg-amber-400 mx-auto" data-aos="zoom-in" data-aos-delay="400"></div>
         </div>

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -8,6 +7,7 @@ import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
 import OfficeGalleryPage from './pages/OfficeGalleryPage';
 import QualityInspectionPage from './pages/QualityInspectionPage';
+import OurProductsPage from './pages/OurProductsPage';
 
 const App: React.FC = () => {
   // Default route to #/home
@@ -43,6 +43,8 @@ const App: React.FC = () => {
         return <QualityInspectionPage />;
       case '#/contact':
         return <ContactPage />;
+      case '#/our-products':
+        return <OurProductsPage />;
       case '#/home':
       default:
         return <HomePage />;
