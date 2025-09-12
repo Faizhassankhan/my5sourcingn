@@ -19,8 +19,8 @@ export const NAV_LINKS: NavLink[] = [
       { href: '#/office-gallery', label: 'Office Gallery' },
     ]
   },
-  { href: '#/contact', label: 'Contact' },
   { href: '#/our-products', label: 'Our Products' },
+  { href: '#/contact', label: 'Contact' },
 ];
 
 const iconClass = "h-12 w-12 text-amber-400";

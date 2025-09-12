@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GALLERY_IMAGES } from '../constants';
 import type { GalleryImage } from '../types';
@@ -8,7 +7,7 @@ const Gallery: React.FC = () => {
     <section id="gallery" className="py-20 bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">Our Products</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">Product Gallery</h2>
           <p className="text-gray-400 mt-2">A glimpse into the quality garments we source.</p>
           <div className="mt-4 w-24 h-1 bg-amber-400 mx-auto"></div>
         </div>
