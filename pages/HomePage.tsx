@@ -37,20 +37,6 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Portfolio/Brands Section */}
-      <section className="bg-gray-900 py-12" data-aos="fade-up">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">Trusted By</h2>
-          <div className="flex flex-wrap justify-center items-center gap-8">
-            <span className="bg-gray-800 px-6 py-3 rounded-lg text-white font-semibold shadow">BrandOne</span>
-            <span className="bg-gray-800 px-6 py-3 rounded-lg text-white font-semibold shadow">FashionPro</span>
-            <span className="bg-gray-800 px-6 py-3 rounded-lg text-white font-semibold shadow">RetailX</span>
-            <span className="bg-gray-800 px-6 py-3 rounded-lg text-white font-semibold shadow">StyleHub</span>
-          </div>
-        </div>
-      </section>
-
       <div data-aos="fade-up">
         <Contact />
       </div>

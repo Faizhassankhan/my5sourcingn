@@ -7,7 +7,7 @@ export const NAV_LINKS: NavLink[] = [
     href: '#/services', 
     label: 'Services',
     children: [
-      { href: '#/services', label: 'Our Services' },
+      { href: '#/services', label: 'Services' },
       { href: '#/quality-inspection', label: 'Quality Inspection' },
     ]
   },

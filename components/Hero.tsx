@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Hero: React.FC = () => {
@@ -27,14 +26,6 @@ const Hero: React.FC = () => {
         <p className="text-lg md:text-xl mb-8 text-gray-300" data-aos="fade-up" data-aos-delay="500">
           We connect your brand with the world’s finest manufacturers—quality, speed, and reliability from concept to delivery.
         </p>
-        <a 
-          href="#/contact" 
-          className="bg-amber-400 text-gray-900 font-bold py-4 px-10 rounded-full shadow-lg hover:bg-amber-500 transition-all duration-300 transform hover:scale-105 text-xl tracking-wide"
-          data-aos="zoom-in"
-          data-aos-delay="700"
-        >
-          Request a Free Quote
-        </a>
       </div>
     </section>
   );
