@@ -27,7 +27,6 @@ const OurProductsPage: React.FC = () => {
     AOS.init({ duration: 1000, once: true });
   }, []);
   const [selectedImage, setSelectedImage] = useState(null);
-  const [zoom, setZoom] = useState(1);
 
   return (
     <div className="bg-gray-900 text-gray-200 font-sans">
@@ -118,8 +117,8 @@ const OurProductsPage: React.FC = () => {
       {/* Full-screen Image Modal */}
       {selectedImage && (
         <div 
-          className="fixed inset-0 bg-black/90 flex items-center justify-center z-[999] p-4 animate-fade-in"
-          onClick={() => { setSelectedImage(null); setZoom(1); }}
+          className="fixed inset-0 bg-black/90 flex items-center justify-center z-[999] p-4 sm:p-8 animate-fade-in"
+          onClick={() => { setSelectedImage(null); }}
           role="dialog"
           aria-modal="true"
           aria-labelledby="image-modal-title"
@@ -140,32 +139,28 @@ const OurProductsPage: React.FC = () => {
               animation: zoom-in 0.3s ease-out;
             }
           `}</style>
-          <div className="relative max-w-4xl w-full h-[70vh] max-h-[80vh] flex items-center justify-center animate-zoom-in" onClick={e => e.stopPropagation()}>
+          {/* Image Container */}
+          <div 
+            className="relative bg-gray-800 rounded-xl shadow-2xl shadow-amber-500/10 overflow-hidden border border-gray-700 animate-zoom-in" 
+            onClick={e => e.stopPropagation()}
+          >
             <img 
               src={selectedImage.src} 
               alt={selectedImage.alt} 
-              style={{ transform: `scale(${zoom})`, transition: 'transform 0.2s' }}
-              className="object-contain rounded-lg shadow-2xl w-full h-full"
+              className="block max-h-[90vh] max-w-[90vw]"
             />
-            <div className="absolute top-4 left-4 flex gap-2 z-20">
-              <button onClick={() => setZoom(z => Math.max(0.5, z - 0.2))} className="bg-gray-800 text-white rounded-full p-2 shadow hover:bg-gray-700 transition" aria-label="Zoom Out">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M7 12h10"/></svg>
-              </button>
-              <button onClick={() => setZoom(z => Math.min(2, z + 0.2))} className="bg-gray-800 text-white rounded-full p-2 shadow hover:bg-gray-700 transition" aria-label="Zoom In">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M12 7v10M7 12h10"/></svg>
-              </button>
-            </div>
-            <div className="absolute -bottom-12 left-0 right-0 text-center p-4">
-              <h2 id="image-modal-title" className="text-white text-lg font-semibold">{selectedImage.alt}</h2>
+            
+            {/* Controls and Title Overlay */}
+            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent pointer-events-none">
+              <div className="flex justify-start items-end">
+                {/* Title */}
+                <div className="pointer-events-auto">
+                  <h2 id="image-modal-title" className="text-white text-lg md:text-xl font-bold drop-shadow-lg">{selectedImage.alt}</h2>
+                  <p className="text-gray-300 text-sm">{selectedImage.category}</p>
+                </div>
+              </div>
             </div>
           </div>
-          <button 
-            onClick={() => { setSelectedImage(null); setZoom(1); }}
-            className="absolute top-4 right-4 text-white text-5xl font-light hover:text-amber-400 transition-colors duration-300"
-            aria-label="Close image viewer"
-          >
-            &times;
-          </button>
         </div>
       )}
     </div>

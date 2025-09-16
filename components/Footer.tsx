@@ -51,8 +51,14 @@ const Footer: React.FC = () => {
         </div>
   <div className="w-full md:w-auto">
           <h3 className="text-lg font-semibold text-white mb-2">Contact</h3>
-          <p className="text-sm">info@my5sourcing.com</p>
-          <p className="text-sm">+92 300 1234567</p>
+          <a href="mailto:info@my5sourcing.com" className="text-sm block hover:text-amber-400 transition-colors">
+            info@my5sourcing.com
+          </a>
+          <a href="mailto:mobeen@my5sourcing.com" className="text-sm block hover:text-amber-400 transition-colors">
+            mobeen@my5sourcing.com
+          </a>
+          <p className="text-sm">+92 321 8277463</p>
+          <p className="text-sm">+44 7404 662835</p>
           <p className="text-sm">Karachi, Pakistan</p>
         </div>
       </div>

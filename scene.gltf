@@ -1,0 +1,311 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1717,
+      "max": [
+        0.22806072235107422,
+        0.15812648832798004,
+        0.8364527821540833
+      ],
+      "min": [
+        -0.239737406373024,
+        -0.07422105222940445,
+        0.01746225915849209
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 20604,
+      "componentType": 5126,
+      "count": 1717,
+      "max": [
+        0.9999463558197021,
+        0.9997222423553467,
+        0.6387429237365723
+      ],
+      "min": [
+        -0.9999566078186035,
+        -0.9998730421066284,
+        -0.9164464473724365
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1717,
+      "max": [
+        0.999749481678009,
+        0.9902684688568115,
+        0.9378311038017273,
+        -1.0
+      ],
+      "min": [
+        -0.9998944401741028,
+        -0.9801464080810547,
+        -0.9352661371231079,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1717,
+      "max": [
+        0.7677947282791138,
+        0.9930411577224731
+      ],
+      "min": [
+        0.006714038550853729,
+        0.006655409932136536
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 13736,
+      "componentType": 5126,
+      "count": 1717,
+      "max": [
+        0.9401554465293884,
+        0.9743680357933044
+      ],
+      "min": [
+        0.02226307801902294,
+        0.01550966128706932
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 9216,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "zulfiqarhussain555 (https://sketchfab.com/zulfiqarhussain555)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/denim-wasted-and-damaged-a9cc212410d84b9186b5e19a7a631444",
+      "title": "Denim wasted and damaged"
+    },
+    "generator": "Sketchfab-16.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 36864,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 27472,
+      "byteOffset": 36864,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 41208,
+      "byteOffset": 64336,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 27472,
+      "byteOffset": 105544,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 133016,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "images": [
+    {
+      "uri": "textures/Jeans_03_diffuse.png"
+    },
+    {
+      "uri": "textures/Jeans_03_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 0
+          },
+          "glossinessFactor": 0.12533589466542247,
+          "specularFactor": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "name": "Jeans_03",
+      "normalTexture": {
+        "index": 1,
+        "scale": 0.3
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Jeans_03_Jeans_03_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.5793371796607971,
+        1.8098590041674078e-16,
+        -0.8150880336761475,
+        0.0,
+        -0.8150880336761475,
+        1.2863869517616358e-16,
+        -0.5793371796607971,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "fcbbe2a50f364574b519c71c685b7c69.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Jeans_03"
+    },
+    {
+      "mesh": 0,
+      "name": "Jeans_03_Jeans_03_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}
