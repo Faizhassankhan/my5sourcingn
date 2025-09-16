@@ -28,11 +28,11 @@ const HomePage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
               <p className="text-gray-300 italic mb-4">“My5sourcing delivered exactly what we needed, on time and with great quality. Highly recommended!”</p>
-              <span className="block text-amber-400 font-bold">Ayesha S., Fashion Brand Owner</span>
+              <span className="block text-amber-400 font-bold">Alex</span>
             </div>
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
               <p className="text-gray-300 italic mb-4">“Professional, reliable, and transparent. Our go-to partner for sourcing.”</p>
-              <span className="block text-amber-400 font-bold">Omar R., Retail Manager</span>
+              <span className="block text-amber-400 font-bold">Mark</span>
             </div>
           </div>
         </div>

@@ -1,12 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
+const heroImages = [
+  '/images/Homepage 1.jpeg',
+  '/images/Homepage 2.jpeg',
+];
 
 const Hero: React.FC = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentImageIndex(prevIndex => (prevIndex + 1) % heroImages.length);
+    }, 7000); // Change image every 7 seconds for a smoother, slower effect
+
+    return () => clearInterval(intervalId); // Cleanup on component unmount
+  }, []);
+
   return (
   <section id="home" className="relative h-screen flex items-center justify-center text-center text-white font-sans">
-      <div 
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center" 
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=1920&h=1080&fit=crop')" }}
-      ></div>
+      {heroImages.map((image, index) => (
+        <div
+          key={index}
+          className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+          style={{
+            backgroundImage: `url('${image}')`,
+            opacity: index === currentImageIndex ? 1 : 0,
+            transform: `scale(${index === currentImageIndex ? 1.1 : 1})`,
+            transition: 'opacity 1.5s ease-in-out, transform 7s ease-in-out',
+          }}
+        />
+      ))}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
       <div className="relative z-10 p-6 max-w-4xl mx-auto">
         <h1 

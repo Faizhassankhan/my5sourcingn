@@ -1,17 +1,8 @@
-import React, { useEffect, useState, Suspense } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { OUR_PRODUCT_IMAGES, SERVICES } from '../constants';
-
-// Lazily load the 3D showcase component for better performance.
-// This splits the component into a separate chunk, which is loaded only when needed.
-const DenimShowcase = React.lazy(() => import('../components/DenimShowcase'));
-
-const ShowcaseLoader = () => (
-  <div className="h-screen w-full flex items-center justify-center bg-gray-900" style={{ minHeight: '500px' }}>
-    <p className="text-amber-400 text-lg animate-pulse">Loading 3D Showcase...</p>
-  </div>
-);
+import { OUR_PRODUCT_IMAGES } from '../constants';
+import { text } from 'stream/consumers';
 
 const PRODUCT_FEATURES = [
   { icon: <span className="text-amber-400 text-3xl">🌟</span>, title: 'High Quality' },
@@ -21,13 +12,11 @@ const PRODUCT_FEATURES = [
 
 const TESTIMONIALS = [
   {
-    name: 'Ayesha S.',
-    role: 'Fashion Brand Owner',
+    name: 'Alex',
     text: '“My5sourcing delivered exactly what we needed, on time and with great quality. Highly recommended!”',
   },
   {
-    name: 'Omar R.',
-    role: 'Retail Manager',
+    name: 'Mark.',
     text: '“Professional, reliable, and transparent. Our go-to partner for sourcing.”',
   },
 ];
@@ -80,11 +69,6 @@ const OurProductsPage: React.FC = () => {
         </div>
       </section>
 
-      {/* 3D Denim Showcase Section */}
-      <Suspense fallback={<ShowcaseLoader />}>
-        <DenimShowcase />
-      </Suspense>
-
       {/* Feature Highlights */}
       <section className="py-16 bg-gray-800" data-aos="fade-up">
         <div className="max-w-4xl mx-auto text-center">
@@ -109,7 +93,7 @@ const OurProductsPage: React.FC = () => {
               <div key={idx} className="bg-gray-800 p-6 rounded-lg shadow-lg">
                 <p className="text-gray-300 italic mb-4">{testimonial.text}</p>
                 <span className="block text-amber-400 font-bold">
-                  {testimonial.name}, {testimonial.role}
+                  {testimonial.name},
                 </span>
               </div>
             ))}

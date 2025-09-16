@@ -50,7 +50,7 @@ export const SERVICES: Service[] = [
 
 
 export const GALLERY_IMAGES: GalleryImage[] = [
-    { id: 1, src: 'https://plus.unsplash.com/premium_photo-1698260795268-cc7e0d5c3174?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Denim Jacket', category: 'Jackets' },
+    { id: 1, src: '/images/collar.jpeg', alt: 'Denim Jacket', category: 'Jackets' },
     { id: 2, src: 'https://nittrichy.campusmall.in/media/catalog/product/cache/51b20d92db92cfa79e65bf00656c43a8/n/i/nit_trichy_varsity_jacket_1_1.jpg', alt: 'Nits Jacket', category: 'Nits' },
     { id: 3, src: 'https://i.postimg.cc/NMZ63Yxd/29eecb56b3ba1dc-file-00000000341c61f5b2105d33a6cf8e9d-wm.jpg', alt: 'Denim jeans showcase', category: 'Denim' },
     { id: 4, src: '/images/3.png', alt: 'Rugged denim hoodie', category: 'Hoodies' },
@@ -103,7 +103,7 @@ export const QUALITY_INSPECTION_CONTENT: QualityStep[] = [
 
 export const OUR_PRODUCT_IMAGES: GalleryImage[] = [
   { id: 1, src: '/images/CH PG 1.jpg', alt: 'Premium T-Shirt', category: 'T-Shirts' },
-  { id: 2, src: '/images/CH PG  (1).jpg', alt: 'Classic Jeans', category: 'Jeans' },
+  { id: 2, src: '/images/CH PG (1).jpg', alt: 'Classic Jeans', category: 'Jeans' },
   { id: 3, src: '/images/CH PG  (2).jpg', alt: 'Printed Jeans', category: 'Jeans' },
   { id: 4, src: '/images/CH PG  (3).jpg', alt: 'Casual Jacket', category: 'Jackets' },
   { id: 5, src: '/images/CH PG  (4).jpg', alt: 'Embroidery Jeans', category: 'Jeans' },
